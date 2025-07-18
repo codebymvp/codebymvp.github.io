@@ -1,1 +1,243 @@
-<h1>Mi portafolio</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeByMVP | Portafolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #0d1b2a;
+      color: #ffffff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="fixed w-full z-50 bg-[#0d1b2a]/90 backdrop-blur-md shadow-lg">
+    <div class="container mx-auto flex justify-between items-center p-4">
+      <div class="flex items-center space-x-3">
+        <img src="logo.png" alt="CodeByMVP Logo" class="h-10">
+        <span class="text-xl font-bold text-white"><span class="text-[#00c4f4]"></span></span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-gray-300 font-medium">
+        <a href="#inicio" class="hover:text-[#00c4f4] transition">Inicio</a>
+        <a href="#sobre-mi" class="hover:text-[#00c4f4] transition">Sobre mí</a>
+        <a href="#servicios" class="hover:text-[#00c4f4] transition">Servicios</a>
+        <a href="#portafolio" class="hover:text-[#00c4f4] transition">Portafolio</a>
+        <a href="#contacto" class="hover:text-[#00c4f4] transition">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="h-screen flex flex-col justify-center items-center text-center 
+         bg-gradient-to-br from-[#0d1b2a] via-[#0d2840] to-[#0a3d5f]">
+    <div class="flex flex-col items-center gap-4" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold">
+        Hola, soy <span class="text-[#00c4f4]">Mike</span>
+      </h1>
+      <p class="text-lg md:text-xl text-gray-300">
+        <span class="text-[#f4b86e]">Diseñador, desarrollador frontend, backend y consultor.</span>
+      </p>
+      <a href="#contacto" 
+         class="mt-4 px-6 py-3 rounded-full border border-[#00c4f4] text-[#00c4f4] 
+                hover:bg-[#00c4f4] hover:text-[#0d1b2a] transition duration-300">
+        Contáctame
+      </a>
+    </div>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section id="sobre-mi" class="py-24 container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-6 text-[#f4b86e]" data-aos="fade-right">Sobre mí</h2>
+    <img src="mifoto.jpg" alt="Foto" class="mx-auto rounded-full w-36 h-36 mb-6 shadow-xl hover:scale-105 transition" data-aos="flip-left">
+    <p class="max-w-3xl mx-auto text-lg leading-relaxed text-gray-300" data-aos="fade-up" data-aos-delay="200">
+      Ingeniero de sistemas especializado en el desarrollo de sistemas y páginas web, con amplia experiencia en consultoría para la transformación digital de empresas e instituciones educativas. Además, imparto talleres y capacitaciones en habilidades TIC para docentes y organizaciones.
+    </p>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-24 bg-[#0a3d5f]">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-[#f4b86e]" data-aos="fade-up">Servicios</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-[#0d1b2a] p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in">
+          <div class="text-[#00c4f4] text-5xl mb-4">💻</div>
+          <h3 class="text-2xl font-bold mb-4 text-white">Desarrollo Web y Sistemas</h3>
+          <p class="text-gray-300">Diseño y desarrollo de sitios web modernos, sistemas empresariales y soluciones tecnológicas a medida.</p>
+        </div>
+        <div class="bg-[#0d1b2a] p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="200">
+          <div class="text-[#00c4f4] text-5xl mb-4">🚀</div>
+          <h3 class="text-2xl font-bold mb-4 text-white">Consultoría Digital</h3>
+          <p class="text-gray-300">Acompaño a empresas en su proceso de digitalización, optimizando procesos y mejorando su presencia online.</p>
+        </div>
+        <div class="bg-[#0d1b2a] p-8 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="zoom-in" data-aos-delay="400">
+          <div class="text-[#00c4f4] text-5xl mb-4">🎓</div>
+          <h3 class="text-2xl font-bold mb-4 text-white">Capacitaciones TIC</h3>
+          <p class="text-gray-300">Realizo talleres y formaciones en competencias digitales para docentes e instituciones educativas.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio" class="py-24 container mx-auto px-6 text-center">
+    <h2 class="text-4xl font-bold mb-12 text-[#f4b86e]" data-aos="fade-up">Proyectos Destacados</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-[#0d1b2a] shadow rounded-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="fade-up">
+        <img src="images/logo-jurasico.png" alt="Proyecto 1" class="w-full hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-white">Proyecto Empresarial</h3>
+          <p class="text-gray-400 mt-2">Sistema de gestión para empresas.</p>
+        </div>
+      </div>
+      <div class="bg-[#0d1b2a] shadow rounded-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+        <img src="images/logo-34013.png" alt="Proyecto 2" class="w-full hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-white">Portal Educativo</h3>
+          <p class="text-gray-400 mt-2">Plataforma de aprendizaje online para instituciones.</p>
+        </div>
+      </div>
+      <div class="bg-[#0d1b2a] shadow rounded-xl overflow-hidden hover:shadow-2xl transition transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="400">
+        <img src="images/logo-ape.png" alt="Proyecto 3" class="w-full hover:scale-110 transition-transform duration-500">
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-white">Transformación Digital</h3>
+          <p class="text-gray-400 mt-2">Consultoría para la digitalización de procesos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-24 bg-[#0a3d5f] text-center">
+    <h2 class="text-4xl font-bold mb-6 text-[#f4b86e]" data-aos="fade-up">Contáctame</h2>
+    <p class="mb-10 text-lg text-gray-300" data-aos="fade-up" data-aos-delay="200">¿Tienes un proyecto en mente o necesitas una consultoría? Escríbeme.</p>
+<form action="https://formspree.io/f/xgvzvnjk" method="POST" 
+      class="max-w-xl mx-auto bg-[#0d1b2a] text-gray-200 p-8 rounded-xl shadow-2xl space-y-4" 
+      data-aos="fade-up" data-aos-delay="400">
+  
+  <input type="text" name="nombre" placeholder="Tu nombre" 
+         class="w-full p-3 border rounded bg-transparent border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00c4f4]" required>
+
+  <input type="email" name="email" placeholder="Tu email" 
+         class="w-full p-3 border rounded bg-transparent border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00c4f4]" required>
+
+  <textarea name="mensaje" placeholder="Tu mensaje" 
+            class="w-full p-3 border rounded bg-transparent border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#00c4f4]" required></textarea>
+
+  <button type="submit" 
+          class="w-full border border-[#00c4f4] text-[#00c4f4] font-bold py-3 rounded hover:bg-[#00c4f4] hover:text-[#0d1b2a] transition transform hover:scale-105">
+    Enviar mensaje
+  </button>
+</form>
+
+  </section>
+
+  <!-- DONACIONES -->
+  <section id="donaciones" class="py-16 text-center bg-[#0d1b2a]">
+    <h2 class="text-3xl font-bold text-[#f4b86e] mb-6">☕ Invítame un café</h2>
+    <p class="text-gray-300 mb-8">Si te gusta mi trabajo y quieres apoyarme, puedes hacerlo desde cualquier parte del mundo o con Yape en Perú.</p>
+    <!-- Botón internacional -->
+
+    <!-- QR para Perú -->
+<!-- Botón para abrir modal -->
+<button onclick="document.getElementById('modalYape').classList.remove('hidden')"
+  class="inline-block px-6 py-3 rounded-full bg-[#f4b86e] text-[#0d1b2a] font-bold shadow-md hover:bg-[#00c4f4] hover:text-white transition">
+ ☕ Invítame un café online 😇
+</button>
+
+<!-- MODAL YAPE -->
+<div id="modalYape" class="hidden fixed inset-0 flex items-center justify-center bg-black/70 backdrop-blur-md z-50">
+  <div class="bg-[#0d1b2a] p-6 rounded-xl text-center shadow-xl relative max-w-sm w-full">
+    
+    <!-- Cerrar modal -->
+    <button onclick="document.getElementById('modalYape').classList.add('hidden')" 
+            class="absolute top-3 right-3 text-gray-400 hover:text-white text-2xl">&times;</button>
+
+    <h3 class="text-xl font-bold text-[#f4b86e] mb-4">QR Yape</h3>
+    <img src="yape-qr.png" alt="QR Yape" class="mx-auto w-56 rounded-lg shadow-lg border border-[#00c4f4]">
+    <p class="text-[#00c4f4] mt-4 font-semibold">Mike Vilcapoma Perez</p>
+    <p class="text-gray-400 text-sm mt-2">Escanea este código con tu app Yape para apoyarme</p>
+
+    <button onclick="document.getElementById('modalYape').classList.add('hidden')"
+      class="mt-4 px-4 py-2 rounded-full bg-[#f4b86e] text-[#0d1b2a] font-semibold hover:bg-[#00c4f4] hover:text-white transition">
+      Cerrar
+    </button>
+  </div>
+</div>
+
+  </section>
+
+  <!-- BOTÓN FLOTANTE DONAR -->
+  <a href="#donaciones"
+     class="fixed bottom-6 right-6 bg-[#f4b86e] text-[#0d1b2a] p-4 rounded-full shadow-lg hover:bg-[#00c4f4] hover:text-white transition transform hover:scale-110">
+    ☕
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#0d1b2a] text-white py-8 text-center">
+    <div class="flex justify-center items-center space-x-3 mb-4">
+      <img src="logo.png" alt="Logo CodeByMVP" class="h-8">
+      <span class="font-semibold text-lg"><span class="text-[#00c4f4]"></span></span>
+    </div>
+    <p class="text-gray-400">&copy; 2025 CodeByMVP. Todos los derechos reservados.</p>
+  </footer>
+
+<script>
+  const form = document.querySelector("form");
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const response = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+      alert("✅ ¡Mensaje enviado con éxito! Te responderé pronto.");
+      form.reset();
+    } else {
+      alert("❌ Hubo un error. Intenta nuevamente.");
+    }
+  });
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  const form = document.querySelector(".contact-form");
+
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(form);
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: formData,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      alert("✅ ¡Mensaje enviado con éxito! Te contactaré pronto.");
+      form.reset();
+    } else {
+      alert("❌ Hubo un problema al enviar el mensaje. Intenta de nuevo.");
+    }
+  }
+
+  form.addEventListener("submit", handleSubmit);
+});
+</script>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+
+</body>
+</html>
